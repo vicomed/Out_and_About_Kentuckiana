@@ -1,0 +1,115 @@
+/*-----------------------------------------------------------
+
+------------------------GENERAL STYLES
+
+------------------------------------------------------------*/
+
+* {
+	background-color: #14abb0;
+	color: #FFF;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0 10px;
+}
+
+/*-----------------------------------------------------------
+
+------------------------STICKY FOOTER
+
+------------------------------------------------------------*/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper {
+  flex: 1 0 auto;
+}
+
+/*-----------------------------------------------------------
+
+------------------------HEADER
+
+------------------------------------------------------------*/
+
+img#logo {
+	display: block;
+	margin: 1% auto -3%;
+	width: 100%;
+	max-width: 1000px;
+	max-height: 100%;
+}
+
+h2.logo_caption {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0;
+	font-size: 1.35em;
+	color: #800080;
+}
+
+h2.logo_caption{
+	font-family: 'Raleway', sans-serif;
+}
+
+h2.logo_caption, 
+nav.main-nav{
+	text-align: center;
+}
+
+/*-----------------------------------------------------------
+
+------------------------NAVIGATION
+
+------------------------------------------------------------*/
+
+nav.main-nav {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.nav-list {
+	list-style: none;
+}
+
+.nav-list li {
+	margin-left: 10%;
+	margin-top: 8px;
+	width: 80%;
+	padding: 8px 0;
+	font-size: 1.2em;
+	/*background-color: #000080; */
+	border-radius: 8px;
+
+}
+
+.nav-list li a {
+	display: inline-block;
+	width: 100%;
+	min-height: 100%;
+	color: #7cfc00;
+}
+
+/*-----------------------------------------------------------
+
+------------------------APPLICATION
+
+------------------------------------------------------------*/
+
+button {
+	background-color: yellow;
+}
+
+button a {
+	color: black;
+}
+
