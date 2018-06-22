@@ -15,6 +15,7 @@ old background clr: #5f9ea0
 * {
 	background-color: #14abb0;
 	color: #FFF;
+
 }
 
 ul {
@@ -37,7 +38,7 @@ p,
 
 /* Consolidate w/ body tag? */
 
-#mainWrap,
+#wrapper,
 footer {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -94,12 +95,9 @@ nav.main-nav {
 	text-align: center;
 }
 
-nav.main-nav {
-	font-family: 'Open Sans', sans-serif;
-}
-
 ul.nav-list {
 	padding-left: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .nav-list li {
@@ -108,9 +106,11 @@ ul.nav-list {
 	width: 80%;
 	padding: 8px 0;
 	font-size: 1.2em;
-	/*background-color: #000080; */
 	border-radius: 8px;
+}
 
+.nav-list li a:hover {
+	color: yellow;
 }
 
 .nav-list li a {
@@ -130,7 +130,12 @@ ul.nav-list {
 	font-family: 'Raleway', sans-serif;
 }
 
-#donate h3 {
+#five span {
+	color: inherit;
+	font-size: 0.8em;
+}
+
+#CWALou h3 {
 	font-family: 'Open Sans', sans-serif;
 	color: #7cfc00;
 }
@@ -161,6 +166,7 @@ ul.nav-list {
 
 #donateButton {
 	width: 300px;
+	background-color: #14abb0;
 }
 
 /*-----------------------------------------------------------
@@ -196,15 +202,24 @@ form label[for="firstname"] {
 	margin-right: 35%;
 }
 
+form input[type="submit"] {
+	background-color: yellow;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
 /*-----------------------------------------------------------
 
 ------------------------FOOTER
 
 ------------------------------------------------------------*/
 
-footer h3.contact,
-#footList {
+footer h3.contact {
 	text-align: center;
+}
+
+footer span {
+	color: yellow;
 }
 
 footer h3,
@@ -221,18 +236,55 @@ footer h3 a:hover {
 	color: yellow;
 }
 
+#footList {
+	margin-left: -10px;
+}
+
+#footList li {
+	word-break: break-all;
+}
+
+#flexFoot {
+	margin-left: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 540px;
+}
+
+#FBlogo {
+	width: 75px;
+	height: 75px;
+	position: relative;
+	z-index: 1;
+}
+
+span.webAd {
+	color: yellow;
+}
+
+/*#footList {
+	float: right;
+}*/
+
 /*-----------------------------------------------------------
 
 ------------------------MEDIA QUERIES
 
 ------------------------------------------------------------*/
 
+@media (min-width: 650px) {
+	footer h3.contact {
+		text-align: left;
+	}
+}
+
 @media (min-width: 770px) {
 	.nav-list {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-right: 40px;
+		margin-right: 90px;
 	}
 }
 

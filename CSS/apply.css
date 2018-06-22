@@ -13,8 +13,19 @@ a {
 	text-decoration: none;
 }
 
-body {
-	margin: 0 10px;
+h2 {
+	color: #000080;
+}
+
+p {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 1px;
+}
+
+#wrapper,
+footer {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 /*-----------------------------------------------------------
@@ -58,12 +69,9 @@ h2.logo_caption {
 	color: #800080;
 }
 
-h2.logo_caption{
-	font-family: 'Raleway', sans-serif;
-}
-
 h2.logo_caption, 
 nav.main-nav{
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
 
@@ -73,11 +81,9 @@ nav.main-nav{
 
 ------------------------------------------------------------*/
 
-nav.main-nav {
+ul.nav-list {
+	padding-left: 0;
 	font-family: 'Open Sans', sans-serif;
-}
-
-.nav-list {
 	list-style: none;
 }
 
@@ -87,9 +93,11 @@ nav.main-nav {
 	width: 80%;
 	padding: 8px 0;
 	font-size: 1.2em;
-	/*background-color: #000080; */
 	border-radius: 8px;
+}
 
+.nav-list li a:hover {
+	color: yellow;
 }
 
 .nav-list li a {
@@ -101,15 +109,52 @@ nav.main-nav {
 
 /*-----------------------------------------------------------
 
+------------------------BODY
+
+------------------------------------------------------------*/
+
+h1,
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+#column2 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#tiny {
+	font-size: 0.8em;
+}
+
+/*-----------------------------------------------------------
+
 ------------------------APPLICATION
 
 ------------------------------------------------------------*/
 
 button {
 	background-color: yellow;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 button a {
 	color: black;
 }
 
+/*-----------------------------------------------------------
+
+------------------------MEDIA QUERIES
+
+------------------------------------------------------------*/
+
+@media (min-width: 800px) {
+	#column1 {
+		float: left;
+	}
+
+	#column2 {
+		float: right;
+	}
+}

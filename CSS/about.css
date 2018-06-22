@@ -9,12 +9,23 @@
 	color: #FFF; 
 }
 
-body {
-	margin: 0 10px;
-}
-
 a {
 	text-decoration: none;
+}
+
+p,
+ul {
+	font-family: 'Merriweather', serif;
+}
+
+p {
+	letter-spacing: 1px;
+}
+
+#wrapper,
+footer {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 /*-----------------------------------------------------------
@@ -42,6 +53,11 @@ body {
 
 ------------------------------------------------------------*/
 
+/* Consider removing, does nothing? */
+#main-head {
+	margin: 0 auto;
+}
+
 img#logo {
 	display: block;
 	margin: 1% auto -3%;
@@ -58,12 +74,9 @@ h2.logo_caption {
 	color: #800080;
 }
 
-h2.logo_caption{
-	font-family: 'Raleway', sans-serif;
-}
-
-h2.logo_caption, 
+h2.logo_caption,
 nav.main-nav{
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
 
@@ -73,11 +86,9 @@ nav.main-nav{
 
 ------------------------------------------------------------*/
 
-nav.main-nav {
+ul.nav-list {
+	padding-left: 0;
 	font-family: 'Open Sans', sans-serif;
-}
-
-.nav-list {
 	list-style: none;
 }
 
@@ -87,9 +98,11 @@ nav.main-nav {
 	width: 80%;
 	padding: 8px 0;
 	font-size: 1.2em;
-	/*background-color: #000080; */
 	border-radius: 8px;
+}
 
+.nav-list li a:hover {
+	color: yellow;
 }
 
 .nav-list li a {
@@ -98,4 +111,34 @@ nav.main-nav {
 	min-height: 100%;
 	color: #7cfc00;
 }
+
+/*-----------------------------------------------------------
+
+------------------------BODY
+
+------------------------------------------------------------*/
+
+h1,
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	color: black;
+}
+
+h2 {
+	color: #000080;
+}
+
+#inclusion li{
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
 
