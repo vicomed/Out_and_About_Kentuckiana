@@ -118,9 +118,25 @@ h2 {
 	font-family: 'Raleway', sans-serif;
 }
 
-#column2 {
-	margin-top: 5px;
+.c2 {
 	margin-bottom: 10px;
+}
+
+#CWAlogo {
+	max-height: 35vh;
+	display: block;
+	margin-left: 10%;
+	margin-right: auto;
+}
+
+#Thanks {
+	max-height: 35vh;
+	max-width: 90%;
+	border: 1px solid white;
+}
+
+#columnParent {
+	margin-top: 50px;
 }
 
 #tiny {
@@ -149,12 +165,20 @@ button a {
 
 ------------------------------------------------------------*/
 
-@media (min-width: 800px) {
-	#column1 {
-		float: left;
+@media (min-width: 750px) {
+	#columnParent {
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+
 	}
 
-	#column2 {
-		float: right;
+	#column1,
+	.c2 {
+		flex: 1 1 0;
+	}
+
+	.c2 {
+		margin-left: 15px;
 	}
 }
